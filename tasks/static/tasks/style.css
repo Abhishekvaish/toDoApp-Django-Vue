@@ -1,0 +1,28 @@
+#app{
+	margin-top: 10%;
+}
+#app .row{
+	display: flex;
+}
+
+#app .task-input{
+	border: 1px solid;
+	border-radius: 5px;
+	padding-left: 15px;
+}
+
+#app .collection-item i{
+	visibility: hidden;
+}
+#app .collection-item:hover i{
+	visibility: visible;
+}
+#app .collection-item{
+	border-radius: 5px;
+}
+#app .collection-item:hover {
+	border :1px solid;
+}
+.completed{
+	text-decoration: line-through;
+}

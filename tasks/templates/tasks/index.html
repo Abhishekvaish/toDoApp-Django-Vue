@@ -1,0 +1,34 @@
+{% extends 'tasks/base.html'  %}
+{% block body %}
+{% verbatim %}
+<div id="app">
+	<div class="row">
+		<div class="col l4 offset-l4 m6 offset-m3 s10 offset-s1">
+			<h4 class="center-align">To Do App</h4>
+			<br>
+			<form @submit.prevent="createTask">
+				<div class="row">
+					<div class="col l8">
+						<input type="text" class="task-input" placeholder="Create a New task" v-model='task'>	
+					</div>
+					<div class="col l4">
+						<input type="submit" name="Submit" class="btn green">
+					</div>
+				</div>
+			</form>
+			<ul class="collection">
+				<li  class="collection-item" 
+				v-for="(task,index) in taskList" 
+				@click="completedTask(index)"
+				:class="{'completed':task.completed}">
+					{{ task.title}}
+					<i class="material-icons secondary-content red-text" 
+					@click.stop="deletedTask(index)">delete</i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endverbatim %}
+
+{% endblock %}

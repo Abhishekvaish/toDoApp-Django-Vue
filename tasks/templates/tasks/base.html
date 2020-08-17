@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<!-- Import Google Fonts -->
+
+<link rel="stylesheet" type="text/css" href="{% static 'tasks/style.css' %}">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+	<title>To Do App</title>
+<body>
+{% block body %}
+
+{% endblock %}
+
+
+
+<!--Import jQuery before materialize.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script type="text/javascript" src="{% static 'tasks/main.js' %}" ></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!-- <script type="text/javascript" src="{% static 'tasks/jquery.js'  %}"></script> -->
+<script>
+    $('document').ready(function(){
+        // jquery goes here
+    });
+</script>
+</body>
+</html>
