@@ -15,7 +15,7 @@ function sendRequest(url,method,data){
 
 
 var app = new Vue({
-	// delimeters : [ "[[","]]" ]
+	// delimiters : [ "[[","]]" ]
 	el : '#app',
 	data : {
 		task : '',
